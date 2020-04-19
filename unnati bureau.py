@@ -1,0 +1,51 @@
+from tkinter import *
+from tkinter import messagebox
+import array
+app = Tk()
+
+app.title('unnati bureau.com/justdial/google')
+app.iconbitmap('c:/users/unnaticode/downloads/unnati.ico')
+app.configure(background='pink')
+lst = []    
+def add_to_c(y):
+    
+    lst.append(y)
+    if y==0:
+        s=sum(lst)
+        messagebox.showinfo('pay in Rs',s)
+        
+mybutton1= Button(app,text ='anuradha wheelchair\nRs100',padx=40,pady=20,command=lambda :add_to_c(120))
+mybutton2= Button(app,text ='aditi wheelchair\nRs150',padx=40,pady=20,command=lambda :add_to_c(150))
+mybutton3= Button(app,text ='manasi sanitizer\nRs 260',padx=40,pady=20,command=lambda :add_to_c(260))
+mybutton4= Button(app,text ='swati wipes\nRs 144',padx=40,pady=20,command=lambda :add_to_c(144))
+mybutton5= Button(app,text ='lavanya masks\nRs 560',padx=40,pady=20,command=lambda :add_to_c(560))
+mybutton6= Button(app,text ='mamy poko pants\nRs 980',padx=40,pady=20,command=lambda :add_to_c(980))
+mybutton7= Button(app,text ='bon bon diaper\nRs 765',padx=40,pady=20,command=lambda :add_to_c(765))
+mybutton8= Button(app,text ='friends diaper\nRs 420',padx=40,pady=20,command=lambda :add_to_c(420))
+mybutton9= Button(app,text ='adult diaper\nRs 657',padx=40,pady=20,command=lambda :add_to_c(657))
+mybutton10= Label(app,text ='WELCOME TO UNNATI BUREAU\n\nCLICK ON WHAT YOU WANT TO BUY',padx=40,pady=20)
+my_button1= Button(app,text ='supreme diapers\nRs100',padx=40,pady=20,command=lambda :r(100))
+my_button2= Button(app,text ='sanitary napkins\nRs150',padx=40,pady=20,command=lambda :s(150))
+mybutton_4= Button(app,text ='disposable masks\nRs 144',padx=40,pady=20,command=lambda :t(144))
+mybutton_5= Button(app,text ='cotton masks\nRs 560',padx=40,pady=20,command=lambda :u(560))
+mybutton_7= Button(app,text ='flexible bed\nRs 7665',padx=40,pady=20,command=lambda :v(7665))
+mybutton_8= Button(app,text ='huggies\nRs 420',padx=40,pady=20,command=lambda :w(420))
+hebutton =Button(app,text='show cart',padx=40,pady=20,command=lambda :add_to_c(0))
+mybutton1.grid(row=4,column=0,padx=50,pady=50)
+mybutton2.grid(row=4,column=1,padx=5,pady=50)
+mybutton3.grid(row=4,column=2,padx=50,pady=5)
+mybutton4.grid(row=3,column=0,padx=50,pady=50)
+mybutton5.grid(row=3,column=1,padx=5,pady=50)
+mybutton6.grid(row=3,column=2,padx=50,pady=5)
+mybutton7.grid(row=2,column=0,padx=50,pady=50)
+mybutton8.grid(row=2,column=1,padx=5,pady=50)
+mybutton9.grid(row=2,column=2,padx=50,pady=5)
+mybutton10.grid(row=1,column=2,padx=50,pady=50)
+my_button1.grid(row=4,column=3,padx=50,pady=50)
+my_button2.grid(row=4,column=4,padx=5,pady=50)
+mybutton_4.grid(row=3,column=3,padx=50,pady=50)
+mybutton_5.grid(row=3,column=4,padx=5,pady=50)
+mybutton_7.grid(row=2,column=3,padx=50,pady=50)
+mybutton_8.grid(row=2,column=4,padx=5,pady=50)
+hebutton.grid(row=1,column=1,padx=50,pady=50)
+app.mainloop()
